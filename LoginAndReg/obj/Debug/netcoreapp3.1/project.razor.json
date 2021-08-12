@@ -14432,6 +14432,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/Views/Home/_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/Views/Shared/_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

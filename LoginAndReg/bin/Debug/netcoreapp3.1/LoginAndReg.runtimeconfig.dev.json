@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/javanogden/.dotnet/store/|arch|/|tfm|",
+      "/Users/javanogden/.nuget/packages"
+    ]
+  }
+}

@@ -7,19 +7,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using LoginAndReg.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 
 namespace LoginAndReg.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private ForumContext _context;
+        public HomeController(ForumContext context)
         {
-            _logger = logger;
+            _context = context;
         }
-
-        public IActionResult Method(User user)
+        [HttpGet("")]
+        public IActionResult Index(User user)
         {
             if(ModelState.IsValid)
             {
@@ -29,39 +30,43 @@ namespace LoginAndReg.Controllers
                 //Save your user object to the database
                 return RedirectToAction("Index");
             }
+            return RedirectToAction("Index");
         }
 
-        public IActionResult Index()
+        public IActionResult OtherIndex()
         {
             return View();
         }
-        public IActionResult Login(LoginUser userSubmission)
-    {
-        if(ModelState.IsValid)
-        {
-            // If inital ModelState is valid, query for a user with provided email
-            var userInDb = dbContext.Users.FirstOrDefault(u => u.Email == userSubmission.Email);
-            // If no user exists with provided email
-            if(userInDb == null)
-            {
-                // Add an error to ModelState and return to View!
-                ModelState.AddModelError("Email", "Invalid Email/Password");
-                return View("SomeView");
-            }
+
+        // [HttpGet("Login")]
+    //     public IActionResult Login(LoginUser userSubmission)
+    // {
+    //     if(ModelState.IsValid)
+    //     {
+    //         // If inital ModelState is valid, query for a user with provided email
+    //         var userInDb = _context.User.FirstOrDefault(u => u.Email == userSubmission.Email);
+    //         // If no user exists with provided email
+    //         if(userInDb == null)
+    //         {
+    //             // Add an error to ModelState and return to View!
+    //             ModelState.AddModelError("Email", "Invalid Email/Password");
+    //             return View("SomeView");
+    //         }
             
-            // Initialize hasher object
-            var hasher = new PasswordHasher<LoginUser>();
+    //         // Initialize hasher object
+    //         var hasher = new PasswordHasher<LoginUser>();
             
-            // verify provided password against hash stored in db
-            var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.Password);
+    //         // verify provided password against hash stored in db
+    //         var result = hasher.VerifyHashedPassword(userSubmission, userInDb.Password, userSubmission.Password);
             
-            // result can be compared to 0 for failure
-            if(result == 0)
-            {
-                // handle failure (this should be similar to how "existing email" is handled)
-            }
-        }
-    }
+    //         // result can be compared to 0 for failure
+    //         if(result == 0)
+    //         {
+    //             // handle failure (this should be similar to how "existing email" is handled)
+    //         }
+    //     }
+    //     return View("Complete");
+    // }
 
         public IActionResult Privacy()
         {
