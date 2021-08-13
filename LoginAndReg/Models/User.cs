@@ -22,9 +22,10 @@ namespace LoginAndReg.Models
     public DateTime CreatedAt {get;set;} = DateTime.Now;
     public DateTime UpdatedAt {get;set;} = DateTime.Now;
     // Will not be mapped to your users table!
-    [NotMapped]
-    [Compare("Password")]
-    [DataType(DataType.Password)]
-    public string Confirm {get;set;}
+    // Wait to add
+    // [NotMapped]
+    // [Compare("Password")]
+    // [DataType(DataType.Password)]
+    // public string Confirm {get;set;}
     }
 }

@@ -14427,6 +14427,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/Views/Home/_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/Views/Home/Complete.cshtml",
+      "TargetPath": "Views\\Home\\Complete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

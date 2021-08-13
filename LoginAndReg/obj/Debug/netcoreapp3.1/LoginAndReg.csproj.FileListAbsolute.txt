@@ -57,3 +57,6 @@
 /Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/LoginAndReg.dll
 /Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/LoginAndReg.pdb
 /Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/LoginAndReg.genruntimeconfig.cache
+/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
+/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Register.cshtml.g.cs
+/Users/javanogden/Desktop/CodingDojo/cSharp/ASP.NETCore/LoginAndRegistration/LoginAndReg/obj/Debug/netcoreapp3.1/Razor/Views/Home/Complete.cshtml.g.cs

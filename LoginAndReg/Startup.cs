@@ -45,7 +45,7 @@ namespace LoginAndReg
 
                 app.UseStaticFiles();
                 app.UseSession();
-                // app.UseRouting();
+                app.UseRouting();
 
 
                 app.UseEndpoints(endpoints =>
